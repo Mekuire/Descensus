@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 4615e50491d6fe84b97275c0c47960b0
+TextScriptImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 282616
+  packageName: Light DI | Easy Dependency Injection
+  packageVersion: 1.0.1
+  assetPath: Assets/Light DI/ReadMe.txt
+  uploadId: 757349

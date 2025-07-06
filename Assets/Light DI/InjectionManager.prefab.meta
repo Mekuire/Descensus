@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: bb7f225401f192442b40b0e05a9414e1
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 282616
+  packageName: Light DI | Easy Dependency Injection
+  packageVersion: 1.0.1
+  assetPath: Assets/Light DI/InjectionManager.prefab
+  uploadId: 757349

@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 521b2ef20542cf34bbbc68a854457738
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 282616
+  packageName: Light DI | Easy Dependency Injection
+  packageVersion: 1.0.1
+  assetPath: Assets/Light DI/Example/Scripts/CameraController.cs
+  uploadId: 757349

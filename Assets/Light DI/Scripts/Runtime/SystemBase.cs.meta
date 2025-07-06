@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 178077e8dbdec514cb4900a71f26ff27
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 282616
+  packageName: Light DI | Easy Dependency Injection
+  packageVersion: 1.0.1
+  assetPath: Assets/Light DI/Scripts/Runtime/SystemBase.cs
+  uploadId: 757349

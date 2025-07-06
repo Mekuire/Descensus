@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 88eb2909d98185c46a1c81b30ef988f6
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 282616
+  packageName: Light DI | Easy Dependency Injection
+  packageVersion: 1.0.1
+  assetPath: Assets/Light DI/Example/Prefabs/InputManager.prefab
+  uploadId: 757349

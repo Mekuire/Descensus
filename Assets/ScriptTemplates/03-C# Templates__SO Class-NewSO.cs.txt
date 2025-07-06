@@ -1,0 +1,9 @@
+using UnityEngine;
+
+#ROOTNAMESPACEBEGIN#
+    [CreateAssetMenu(fileName = "#SCRIPTNAME#", menuName = "SO/#SCRIPTNAME#")]
+    public class #SCRIPTNAME# : ScriptableObject
+    {
+        //[field: SerializeField] public float TemplateField { get; private set; }
+    }
+#ROOTNAMESPACEEND#
