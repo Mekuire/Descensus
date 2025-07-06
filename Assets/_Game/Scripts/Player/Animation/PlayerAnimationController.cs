@@ -6,6 +6,8 @@ namespace Descensus
     {
         private readonly Animator _playerAnimator;
         private readonly Animator _dashRewindAnimator;
+        
+        private const string REWIND_DASH_EFFECT_KEY = "Rewind";
 
         public PlayerAnimationController(Animator playerAnimator, Animator dashRewindAnimator)
         {
@@ -20,7 +22,7 @@ namespace Descensus
 
         public void PlayDashRewindEffect()
         {
-            _dashRewindAnimator.Play("Rewind", 0, 0f);
+            _dashRewindAnimator.Play(REWIND_DASH_EFFECT_KEY, 0, 0f);
         }
     }
 }

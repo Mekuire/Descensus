@@ -8,7 +8,7 @@ namespace Descensus
         private Player _player;
         public void Initialize(Player player) => _player = player;
         
-        // This method calling on move animation (Animation has key frames when this method should be called)
+        // This method is called during the animation of the move (the animation has keyframes when this method should be called)
         public void PlayStepSound() => _player.AudioHandler.PlayStepSound();
     }
 }
