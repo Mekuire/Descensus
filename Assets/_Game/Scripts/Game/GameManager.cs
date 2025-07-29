@@ -206,6 +206,8 @@ namespace Descensus
             // Loading next level from resources
             var loadAsync = Resources.LoadAsync(loadPath, typeof(Level));
             yield return loadAsync;
+
+            float yDifferenceBetweenPlayerAndCamera = _player.Rigidbody.position.y - _camera.transform.position.y;
             
             // Set Player position above new level
             Vector2 newPlayerPosition = _gameConfig.PlayerRewindPosition;
@@ -213,7 +215,7 @@ namespace Descensus
             _player.Rigidbody.position = newPlayerPosition;
             
             // As well as camera position
-            Vector3 newCameraPosition = new Vector3(0f, newPlayerPosition.y + _positionComposer.TargetOffset.y, -10f);
+            Vector3 newCameraPosition = new Vector3(0f, newPlayerPosition.y - yDifferenceBetweenPlayerAndCamera, -10f);
             _camera.ForceCameraPosition(newCameraPosition, Quaternion.identity);
             
             // Cinemachine camera has its own updating algorythm
