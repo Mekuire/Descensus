@@ -35,10 +35,6 @@ namespace Descensus
         
         private void Awake()
         {
-            // Its special container that holds some services that needed in all game scenes,
-            // such as input manager, audio manager, settings manager, events manager etc.
-            // This operation will try to initialize all fields that marked with Inject attribute if it has such service
-            // It is not mine script, its an asset
             InjectionManager.InjectTo(this);
             
             // If game was paused in Game scene and player quit to main menu, it will UnPause game

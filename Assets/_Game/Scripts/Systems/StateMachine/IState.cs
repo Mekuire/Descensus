@@ -1,8 +1,5 @@
 namespace Descensus
 {
-    /// <summary>
-    /// Every state should implement this interface so you can add this state to state machine 
-    /// </summary>
     public interface IState
     {
         void Enter();

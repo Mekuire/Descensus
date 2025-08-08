@@ -30,9 +30,6 @@ namespace Descensus
             _fadeCurtain.gameObject.SetActive(false);
         }
 
-        // Here I use some very cool asset called DOTween tha allows you 
-        // to make animations using code. In this case it smoothly fades screen black
-        // on game over
         public void FadeInCurtain(float duration)
         {
             if (!_fadeCurtain) return;

@@ -9,8 +9,6 @@ using UnityEngine.Audio;
 
 namespace Descensus
 {
-    // Having a big Game manager that holds all game logic is not quite good practice,
-    // but in this case it was the simplest solution
     public class GameManager : SystemBase
     {
         [Header("Start Level")]
@@ -46,8 +44,7 @@ namespace Descensus
         {
             InjectionManager.InjectTo(this);
             
-            // First level is already on scene, but its good practice
-            // to have empty game scene and instantiate level on start just to have more control
+            // First level is already on scene
             _currentLevel = _startLevel;
             SetNewLevel(colorLerpDuration: 0f);
             PlayMusic(_currentLevel.MusicClip);
@@ -96,7 +93,6 @@ namespace Descensus
 
         private void Update()
         {
-            // Only in Unity editor I can cause some logic just to test
 #if UNITY_EDITOR
             if (Input.GetKeyDown(KeyCode.Backspace))
             {
@@ -181,9 +177,6 @@ namespace Descensus
             _transitionEffect.Stop();
         }
 
-        // This sequence (coroutine in unity slang) has some magic numbers in wait blocks
-        // Thats not good, it should be in some config (like in game over below), but I was too lazy to add all this 
-        // numbers and coming up with new name for each
         private IEnumerator SetNewLocation(string loadPath)
         {
             _userInput.DisableInput();
@@ -283,7 +276,7 @@ namespace Descensus
             _userInput.EnableInput();
         }
         
-        public void ExitToMainMenu()
+        private void ExitToMainMenu()
         {
             LucidAudio.StopAll();
             _gameCanvas.PlayButtonClick();

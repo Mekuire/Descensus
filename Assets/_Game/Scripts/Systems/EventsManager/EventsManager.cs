@@ -4,9 +4,6 @@ using UnityEngine.Events;
 
 namespace HeroicEngine.Systems.Events
 {
-    /// <summary>
-    /// This class is not used in game, But it allows you to send events to all objects that subscribed on it.
-    /// </summary>
     public sealed class EventsManager : SystemBase, IEventsManager
     {
         private readonly Hashtable _eventHash = new();

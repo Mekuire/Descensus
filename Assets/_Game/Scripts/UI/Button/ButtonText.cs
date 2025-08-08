@@ -4,9 +4,6 @@ using UnityEngine;
 
 namespace Descensus
 {
-    /// <summary>
-    /// Used for move text down when button pressed
-    /// </summary>
     [RequireComponent(typeof(TextMeshProUGUI))]
     public class ButtonText : MonoBehaviour
     {

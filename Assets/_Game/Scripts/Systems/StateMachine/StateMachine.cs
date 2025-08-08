@@ -4,9 +4,6 @@ using UnityEngine;
 
 namespace Descensus
 {
-    /// <summary>
-    /// This is a very common game dev pattern that helps perform and change states clearly.
-    /// </summary>
     public abstract class StateMachine : IStateSwitcher
     {
         protected IState _currentState;

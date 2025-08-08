@@ -86,11 +86,8 @@ namespace Descensus
 
         private void OnDrawGizmos()
         {
-            // If config reference is set and draw gizmos is true
             if (_drawGizmos && Config)
             {
-                // draws a ray that checks if there is a wall and draws a sphere that checks if the player is on the ground
-                // Works only in unity editor
                 Gizmos.color = Color.yellow;
                 Gizmos.DrawWireSphere(_groundCheck.position, Config.GroundCheckRadius);
 

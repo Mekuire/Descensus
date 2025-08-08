@@ -3,13 +3,6 @@ using UnityEngine.Events;
 
 namespace HeroicEngine.Systems.Events
 {
-    /// <summary>
-    /// this interface declares functions that object is must to create
-    /// also its needed to limit functionality for 
-    /// for example class that has reference to IEventsManager
-    /// (not to main EventsManager object) cant accidentally destroy this object (to protect the game from crashes)
-    /// Its good practice to have interfaces for most of your game services
-    /// </summary>
     public interface IEventsManager : ISystem
     {
         void RegisterListener<T>(string eventType, UnityAction<T> listener);
